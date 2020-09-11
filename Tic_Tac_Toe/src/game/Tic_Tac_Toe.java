@@ -10,6 +10,7 @@ public class Tic_Tac_Toe {
 		String matrix[][] = new String[LINE] [COLUMN];
 		int ticTacToe[][] = new int[LINE][COLUMN];
 		int i, lCount, cCount, turn = 1, play;
+		boolean drawn = true;
 		Scanner kb = new Scanner(System.in);
 		
 		for(lCount = 0; lCount < LINE; lCount++) {
@@ -143,7 +144,8 @@ public class Tic_Tac_Toe {
 				System.out.printf("	[%s][%s][%s]\n",matrix[1][0], matrix[1][1], matrix[1][2]);
 				System.out.printf("	[%s][%s][%s]\n", matrix[2][0], matrix[2][1], matrix[2][2]);
 				System.out.println("\nPlayer 1 win.");
-				turn = 11;
+				drawn = false;
+				turn = 10;
 			}
 			else if(ticTacToe[0][0] == 2 && ticTacToe[0][1] == 2 && ticTacToe[0][2] == 2 || ticTacToe[1][0] == 2 && ticTacToe[1][1] == 2 && ticTacToe[1][2] == 2 ||ticTacToe[2][0] == 2 && ticTacToe[2][1] == 2 && ticTacToe[2][2] == 2 || ticTacToe[0][0] == 2 && ticTacToe[1][0] == 2 && ticTacToe[2][0] == 2 || ticTacToe[0][1] == 2 && ticTacToe[1][1] == 2 && ticTacToe[2][1] == 2 || ticTacToe[0][2] == 2 && ticTacToe[1][2] == 2 && ticTacToe[2][2] == 2 || ticTacToe[0][0] == 2 && ticTacToe[1][1] == 2 && ticTacToe[2][2] == 2 || ticTacToe[0][2] == 2 && ticTacToe[1][1] == 2 && ticTacToe[2][0] == 2) {
 				System.out.println("The final game board is: ");
@@ -151,10 +153,11 @@ public class Tic_Tac_Toe {
 				System.out.printf("	[%s][%s][%s]\n",matrix[1][0], matrix[1][1], matrix[1][2]);
 				System.out.printf("	[%s][%s][%s]\n", matrix[2][0], matrix[2][1], matrix[2][2]);
 				System.out.println("\nPlayer 2 win.");
-				turn = 11;
+				drawn = false;
+				turn = 10;
 			}
 		}
-		if(turn == 10) {
+		if(drawn == true) {
 			System.out.println("The final game board is: ");
 			System.out.printf("	[%s][%s][%s]\n", matrix[0][0], matrix[0][1], matrix[0][2]);
 			System.out.printf("	[%s][%s][%s]\n",matrix[1][0], matrix[1][1], matrix[1][2]);
