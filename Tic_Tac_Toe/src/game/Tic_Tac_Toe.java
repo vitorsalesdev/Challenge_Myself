@@ -30,7 +30,7 @@ public class Tic_Tac_Toe {
 				System.out.printf("	[%s][%s][%s]		|	[1][2][3]\n", matrix[0][0], matrix[0][1], matrix[0][2]);
 				System.out.printf("	[%s][%s][%s]		|	[4][5][6]\n",matrix[1][0], matrix[1][1], matrix[1][2]);
 				System.out.printf("	[%s][%s][%s]		|	[7][8][9]\n", matrix[2][0], matrix[2][1], matrix[2][2]);
-				System.out.printf("\nPlayer 1 turn. Choose the number corresponding to an empty square on the board: ");
+				System.out.printf("\nPlayer 1 turn. Choose the number corresponding to an empty square on the game board: ");
 				play = kb.nextInt();
 				for (i = 0; i < 50; ++i)  
 				       System.out.println();
@@ -87,7 +87,7 @@ public class Tic_Tac_Toe {
 					System.out.printf("	[%s][%s][%s]		|	[1][2][3]\n", matrix[0][0], matrix[0][1], matrix[0][2]);
 					System.out.printf("	[%s][%s][%s]		|	[4][5][6]\n",matrix[1][0], matrix[1][1], matrix[1][2]);
 					System.out.printf("	[%s][%s][%s]		|	[7][8][9]\n", matrix[2][0], matrix[2][1], matrix[2][2]);
-					System.out.printf("\nPlayer 2 turn. Choose the number corresponding to an empty square on the board: ");
+					System.out.printf("\nPlayer 2 turn. Choose the number corresponding to an empty square on the game board: ");
 					play = kb.nextInt();
 					for (i = 0; i < 50; ++i)  
 					       System.out.println(); 
