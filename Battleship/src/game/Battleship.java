@@ -42,7 +42,7 @@ public class Battleship {
 			System.out.println("    ___________________");
 			i = 1;
 			for(lCount = 0; lCount < LINE; lCount++) {
-				System.out.printf("%d  ",(i));
+				System.out.printf("%d  ", i);
 				for(cCount = 0; cCount < COLUMN; cCount++) {
 					System.out.printf("| %c ", board[lCount][cCount]);
 				}
@@ -83,7 +83,7 @@ public class Battleship {
 		System.out.println("    ___________________");
 		i = 0;
 		for(lCount = 0; lCount < LINE; lCount++) {
-			System.out.printf("%d  ",(i));
+			System.out.printf("%d  ",i);
 			for(cCount = 0; cCount < COLUMN; cCount++) {
 				System.out.printf("| %c ", board[lCount][cCount]);
 			}
