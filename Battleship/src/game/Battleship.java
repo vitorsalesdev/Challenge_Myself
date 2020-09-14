@@ -7,7 +7,7 @@ public class Battleship {
 
 	public static void main(String[] args) {
 		final int LINE= 5, COLUMN = 5, UNIT = 3; 
-		int lCount, cCount, i = 0, unitTotal = 0, cL, cC, unitLine, unitColumn;
+		int lCount, cCount, i, unitTotal = 0, cL, cC, unitLine, unitColumn;
 		char board[][] = new char[LINE][COLUMN];
 		int boardCalc[][] = new int[LINE][COLUMN];
 		Random rd = new Random();
@@ -40,9 +40,9 @@ public class Battleship {
 		while(unitTotal > 0) {
 			System.out.println("     1   2   3   4   5");
 			System.out.println("    ___________________");
-			i = 0;
+			i = 1;
 			for(lCount = 0; lCount < LINE; lCount++) {
-				System.out.printf("%d  ",(i + 1));
+				System.out.printf("%d  ",(i));
 				for(cCount = 0; cCount < COLUMN; cCount++) {
 					System.out.printf("| %c ", board[lCount][cCount]);
 				}
@@ -83,7 +83,7 @@ public class Battleship {
 		System.out.println("    ___________________");
 		i = 0;
 		for(lCount = 0; lCount < LINE; lCount++) {
-			System.out.printf("%d  ",(i + 1));
+			System.out.printf("%d  ",(i));
 			for(cCount = 0; cCount < COLUMN; cCount++) {
 				System.out.printf("| %c ", board[lCount][cCount]);
 			}
