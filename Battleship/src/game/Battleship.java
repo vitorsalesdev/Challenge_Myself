@@ -13,7 +13,6 @@ public class Battleship {
 		Random rd = new Random();
 		Scanner kb = new Scanner(System.in);
 		
-		
 		while(unitTotal != UNIT) {
 			unitTotal = 0;
 			for(lCount = 0; lCount < LINE; lCount++) {
@@ -36,7 +35,6 @@ public class Battleship {
 			board[lCount][cCount] = '~';
 			}
 		}
-		
 		while(unitTotal > 0) {
 			System.out.println("     1   2   3   4   5");
 			System.out.println("    ___________________");
@@ -92,7 +90,6 @@ public class Battleship {
 			i++;
 		}
 		System.out.println("    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
-		System.out.println("Congratulations, you win the game!!!");
-		
+		System.out.println("Congratulations, you win the game!!!");	
 	}
 }
